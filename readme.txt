@@ -18,7 +18,9 @@ The description will go cover the files used chronologically based on the proces
    2. "Python/regressionH2label.ipynb" contained a Juypter notebook export to produce the unconstrained fit, which results can be found in the report. "Python/regressionH2label.py" is the python export which can be run without the Jupyter IDE
 
 
-3. The test sets that are taken before the training can be found in the datasets folder as sheets within the workbooks. These are used by the trained model to predict a value for H2, which together are run back through the Matlab model "Simulink/TwoArea_OperatingPointTester.m" to obtain the nadir frequencies. The "Simulink/TwoArea_OperatingPointTesterMultipleFiles.m" allows multiple files to be run for testing, useful when doing large amount of testing. 
+3. The test sets that are taken before the training can be found in the datasets folder as sheets within the workbooks. These are used by the trained model to predict a value for H2, which together are run back through the Matlab model "Simulink/TwoArea_OperatingPointTester.m" to obtain the nadir frequencies. 
+
+   1. The "Simulink/TwoArea_OperatingPointTesterMultipleFiles.m" allows multiple files to be run for testing, useful when doing large amount of testing. 
 
 
 4. Mesh plot can be created using the Matlab file "Simulink/MeshPlot.m", which takes a input of MAT. Multiple plots can placed by running the program again and changing the file input without closing the open graph plot. 
