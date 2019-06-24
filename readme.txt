@@ -1,0 +1,20 @@
+This folder contains the files that were used in for the FYP. 
+
+The description will go cover the files used chronologically based on the process
+
+1. The Simulink folder contains the files used to obtain the operating points that can be found in the Datasets folder. 
+
+"TwoArea_OperatingPointFinder.m"- Finds operating points based on the ranges for H1,PFR1 and PFR2 given
+
+2. The constrained and unconstrained regression can be produced. 
+
+"TwoArea_ConstrainedFit.m"- uses lsqlinear function produce the constrained fit outputting the x values, which results can be found saved in "Constrained regression x values". The constrained regression requires a Vandermonde matrix input which can be produced using the "Python/matrixmaker.py" file that can be imported into Matlab. 
+
+"Python/regressionH2label.ipynb" contained a Juypter notebook export to produce the unconstrained fit, which results can be found in the report. "Python/regressionH2label.py" is the python export which can be run without the Jupyter IDE
+
+
+3. The test sets that are taken before the training can be found in the datasets folder as sheets within the workbooks. These are used by the trained model to predict a value for H2, which together are run back through the Matlab model "Simulink/TwoArea_OperatingPointTester.m" to obtain the nadir frequencies. The "Simulink/TwoArea_OperatingPointTesterMultipleFiles.m" allows multiple files to be run for testing, useful when doing large amount of testing. 
+
+4. Mesh plot can be created using the Matlab file "Simulink/MeshPlot.m", which takes a input of MAT. Multiple plots can placed by running the program again and changing the file input without closing the open graph plot. 
+
+5. (Further testing extension) The H1+H2 plot against PFR1 and PFR2 plot can be found "H1+H2plots" folder, which plots a line H*PFR>k, to confirm points are above the line. This is not part of the project. The thickness of the line can be changed by changing the line width in the code. 
